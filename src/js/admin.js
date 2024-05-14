@@ -82,7 +82,51 @@ async function editFood(foodname) {
     const priceEl = document.getElementById("updatedPrice");
     const ingredientsEl = document.getElementById("updatedIngredients");
 
+    //Läs ut datan som ska uppdateras
     nameEl.setAttribute("value", `${foodname}`);
     priceEl.setAttribute("value", `${data.price}`);
     ingredientsEl.setAttribute("value", `${data.ingredients}`);
-}
+
+};
+
+//uppdatera-knappen
+const updateBtnEl = document.getElementById("updateBtn");
+updateBtnEl.addEventListener("click", updateFood);
+
+//delete-knappen
+const deleteBtnEl = document.getElementById("deleteBtn");
+deleteBtnEl.addEventListener("click", deleteFood);
+
+//update-funktion
+async function updateFood() {
+
+    const nameEl = document.getElementById("updatedFoodname");
+    const priceEl = document.getElementById("updatedPrice");
+    const ingredientsEl = document.getElementById("updatedIngredients");
+
+    let foodItem = {
+        foodname: nameEl.value,
+        price: priceEl.value,
+        ingredients: ingredientsEl.value
+    }
+    let status = document.getElementById("updateStatus");
+    const token = localStorage.getItem('token');
+
+    const response = await fetch(url + "/updatemenu/" + nameEl.value, {
+        method: "PUT",
+        headers: {
+            'Authorization': 'Bearer ' + token,
+            "Content-Type": "Application/json"
+        },
+        body: JSON.stringify(foodItem)
+    });
+
+    const data = await response.json();
+    console.log(data);
+    if (data.error) {
+        status.innerHTML = `${data.error}`;
+    } else {
+        status.innerHTML = `${data.message}`;
+    }
+};
+
