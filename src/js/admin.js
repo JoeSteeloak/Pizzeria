@@ -37,7 +37,7 @@ async function createFoodItem(foodname, price, ingredients) {
         method: "POST",
         headers: {
             'Authorization': 'Bearer ' + token,
-            "Content-Type": "Application/json"            
+            "Content-Type": "Application/json"
         },
         body: JSON.stringify(foodItem)
     });
@@ -48,5 +48,41 @@ async function createFoodItem(foodname, price, ingredients) {
         status.innerHTML = `${data.error}`;
     } else {
         status.innerHTML = `${data.message}`;
+        document.getElementById("foodname").value = "";
+        document.getElementById("price").value = "";
+        document.getElementById("ingredients").value = "";
     }
+}
+
+/* Hämta all mat på menyn och lägg den i dropdownmenyn */
+window.onload = init;
+async function init() {
+    const optionsEl = document.getElementById("options");
+
+    const response = await fetch(url + "/getmenu");
+    const data = await response.json();
+    data.forEach(e => {
+        const option = document.createElement("option");
+        option.setAttribute("value", `${e.foodname}`);
+        option.innerHTML = `${e.foodname}`;
+        optionsEl.appendChild(option);
+    });
+    optionsEl.addEventListener('change', (event) => {
+        const selectedFoodname = event.target.value;
+        editFood(selectedFoodname);
+    });
+};
+
+async function editFood(foodname) {
+    console.log(foodname);
+
+    const response = await fetch(url + "/getmenu/" + foodname);
+    const data = await response.json();
+    const nameEl = document.getElementById("updatedFoodname");
+    const priceEl = document.getElementById("updatedPrice");
+    const ingredientsEl = document.getElementById("updatedIngredients");
+
+    nameEl.setAttribute("value", `${foodname}`);
+    priceEl.setAttribute("value", `${data.price}`);
+    ingredientsEl.setAttribute("value", `${data.ingredients}`);
 }

@@ -13,6 +13,14 @@
         <h1>Admin</h1>
     </header>
     <main>
+        
+        <label for="options">Välj ett alternativ:</label>
+        <select name="options" id="options">
+            <option value="create">Skapa ny</option>
+        </select>
+
+        </select>
+        <!-- Form for adding new food -->
         <form action="" id="registerForm">
             <legend>Registrera ny mat på menyn:</legend>
             <!-- foodname -->
@@ -29,9 +37,26 @@
             <input type="button" id="registerBtn" class="button" value="SPARA">
             <!-- avbrytknapp -->
             <input type="reset" value="RENSA">
-
             <div id="status"></div>
-
+        </form>
+        <!-- Form for updating and deleting food -->
+        <form action="" id="updateForm">
+            <legend>uppdatera eller ta bort mat på menyn:</legend>
+            <!-- foodname -->
+            <label for="updatedFoodname">Namn på maten:</label>
+            <input type="text" name="updatedFoodname" id="updatedFoodname" maxlength="255" minlength="4">
+            <!-- price -->
+            <label for="updatedPrice">Pris:</label>
+            <input type="number" name="updatedPrice" id="updatedPrice" maxlength="255" minlength="4">
+            <!-- ingredients -->
+            <label for="updatedIngredients">Ingredienser:</label>
+            <input type="text" name="updatedIngredients" id="updatedIngredients" maxlength="255"
+                minlength="4">
+            <!-- registreraknapp -->
+            <input type="button" id="updateBtn" class="button" value="UPPDATERA">
+            <!-- avbrytknapp -->
+            <input type="button" id="deleteBtn" value="RADERA">
+            <div id="status"></div>
         </form>
     </main>
 
