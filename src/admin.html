@@ -1,13 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script type="module" src="./js/admin.js"></script>
 </head>
+
 <body>
-    <header><h1>Admin</h1></header>
-    <input type="button" id="logoutbtn" class="button" value="LOGOUT">
+    <header>
+        <h1>Admin</h1>
+    </header>
+    <main>
+        <form action="" id="registerForm">
+            <legend>Registrera ny mat på menyn:</legend>
+            <!-- foodname -->
+            <label for="foodname">Namn på maten:</label>
+            <input type="text" name="foodname" id="foodname" placeholder="Ex. Margharita" maxlength="255" minlength="4">
+            <!-- price -->
+            <label for="price">Pris:</label>
+            <input type="number" name="price" id="price" placeholder="100" maxlength="255" minlength="4">
+            <!-- ingredients -->
+            <label for="ingredients">Ingredienser:</label>
+            <input type="text" name="ingredients" id="ingredients" placeholder="Tomat, Ost..." maxlength="255"
+                minlength="4">
+            <!-- registreraknapp -->
+            <input type="button" id="registerBtn" class="button" value="SPARA">
+            <!-- avbrytknapp -->
+            <input type="reset" value="RENSA">
+
+            <div id="status"></div>
+
+        </form>
+    </main>
+
+    <footer><input type="button" id="logoutbtn" class="button" value="LOGOUT"></footer>
 </body>
+
 </html>
