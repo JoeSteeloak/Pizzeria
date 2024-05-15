@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login </title>
-    <link rel="stylesheet" href="./css/styles.scss">
+    <link rel="stylesheet" href="./css/normalize.scss">
     <script type="module" src="./js/login.js"></script>
 </head>
 
@@ -14,10 +14,11 @@
         <div class="login-page">
             <div class="form">
                 <form action="" id="login" class="login-form">
+                    <legend>Logga in</legend>
                     <!-- Username -->
-                    <input type="text" name="username" id="username" maxlength="255" placeholder="Username">
+                    <input type="text" name="username" id="username" maxlength="255" placeholder="Användarnamn">
                     <!-- Password -->
-                    <input type="password" name="password" id="password" maxlength="255" placeholder="Password">
+                    <input type="password" name="password" id="password" maxlength="255" placeholder="Lösenord">
                     <!-- log in-knapp -->
                     <input type="submit" id="loginBtn" class="button" value="LOGIN">
                 </form>

@@ -6,16 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizzeria Formaggio</title>
     <link rel="stylesheet" href="./css/styles.scss">
+    <link rel="stylesheet" href="./css/normalize.scss">
     <script type="module" src="./js/main.js"></script>
+    <script src="https://kit.fontawesome.com/49496d55e2.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <h1>Pizzeria Formaggio</h1>
         <nav>
             <ul>
-                <li><a href="login.html">login</a></li>
-                <li><a href="admin.html">hemlig</a></li>
+                <li><a href="#header">Start</a></li>
+                <li><a href="#menu">Meny</a></li>
+                <li><a href="#about">Om oss</a></li>
+                <li><a href="login.html"><i class="fa-solid fa-lock"></i></a></li>
+                <li><a href="admin.html" class="hidden">hemlig</a></li>
             </ul>
         </nav>
     </header>
@@ -46,9 +51,9 @@
             211 47 Malmö</p>
             <h4>kontakta oss</h4>
             <p>0737-465 87 46</p>
-            <p>facebook</p>
-            <p>twitter/x</p>
-            <p>instagram</p>
+            <p><i class="fa-brands fa-square-facebook"></i></p>
+            <p><i class="fa-brands fa-x-twitter"></i></p>
+            <p><i class="fa-brands fa-instagram"></i></p>
         <p>&copy; Jonas Ståleker</p>
     </footer>
 </body>
