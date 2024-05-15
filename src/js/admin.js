@@ -9,6 +9,8 @@ function logout() {
 
 
 const url = "http://127.0.0.1:3000/menu" //URL till mitt API
+const registerFormEl = document.getElementById('registerForm');
+const updateFormEl = document.getElementById('updateForm');
 
 
 /* funktion för att läsa in datan i formuläret */
@@ -48,9 +50,7 @@ async function createFoodItem(foodname, price, ingredients) {
         status.innerHTML = `${data.error}`;
     } else {
         status.innerHTML = `${data.message}`;
-        document.getElementById("foodname").value = "";
-        document.getElementById("price").value = "";
-        document.getElementById("ingredients").value = "";
+        setTimeout(function () { location.reload() }, 2000);
     }
 }
 
@@ -67,9 +67,17 @@ async function init() {
         option.innerHTML = `${e.foodname}`;
         optionsEl.appendChild(option);
     });
-    optionsEl.addEventListener('change', (event) => {
+    optionsEl.addEventListener('change', (event) => { //eventlistener när man väljer i rullgardinen
         const selectedFoodname = event.target.value;
-        editFood(selectedFoodname);
+
+        if (selectedFoodname === 'create') {
+            registerFormEl.classList.remove('hidden');
+            updateFormEl.classList.add('hidden');
+        } else {
+            updateFormEl.classList.remove('hidden');
+            registerFormEl.classList.add('hidden');
+            editFood(selectedFoodname);
+        }
     });
 };
 
@@ -86,7 +94,6 @@ async function editFood(foodname) {
     nameEl.setAttribute("value", `${foodname}`);
     priceEl.setAttribute("value", `${data.price}`);
     ingredientsEl.setAttribute("value", `${data.ingredients}`);
-
 };
 
 //uppdatera-knappen
@@ -127,6 +134,35 @@ async function updateFood() {
         status.innerHTML = `${data.error}`;
     } else {
         status.innerHTML = `${data.message}`;
+        setTimeout(function () { location.reload() }, 2000);
     }
 };
 
+//delete-function
+async function deleteFood() {
+
+    const nameEl = document.getElementById("updatedFoodname");
+    let foodItem = {
+        foodname: nameEl.value,
+    };
+    let status = document.getElementById("updateStatus");
+    const token = localStorage.getItem('token');
+
+    const response = await fetch(url + "/deletemenu/" + nameEl.value, {
+        method: "DELETE",
+        headers: {
+            'Authorization': 'Bearer ' + token,
+            "Content-Type": "Application/json"
+        },
+        body: JSON.stringify(foodItem)
+    });
+
+    const data = await response.json();
+    console.log(data);
+    if (data.error) {
+        status.innerHTML = `${data.error}`;
+    } else {
+        status.innerHTML = `${data.message}`;
+        setTimeout(function () { location.reload() }, 2000);
+    }
+};

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script type="module" src="./js/admin.js"></script>
+    <link rel="stylesheet" href="./css/admin.scss">
 </head>
 
 <body>
@@ -21,7 +22,7 @@
 
         </select>
         <!-- Form for adding new food -->
-        <form action="" id="registerForm">
+        <form action="" id="registerForm" >
             <legend>Registrera ny mat på menyn:</legend>
             <!-- foodname -->
             <label for="foodname">Namn på maten:</label>
@@ -40,7 +41,7 @@
             <div id="status"></div>
         </form>
         <!-- Form for updating and deleting food -->
-        <form action="" id="updateForm">
+        <form action="" id="updateForm" class="hidden">
             <legend>uppdatera eller ta bort mat på menyn:</legend>
             <!-- foodname -->
             <label for="updatedFoodname">Namn på maten:</label>
