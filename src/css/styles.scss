@@ -1,0 +1,70 @@
+body {
+    width: 100vw;
+}
+
+header {
+    position: fixed;
+    background-color: rgb(0, 0, 0, 0.8);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+
+    nav {
+        width: 100vw;
+        max-width: 1800px;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        text-align: right;
+    }
+    li {
+        list-style: none;
+        display: inline-block;
+        margin-right: 50px;
+
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    }
+
+    .hidden {
+        display: none;
+    }
+}
+
+#banner {
+    h1{
+        margin: 0;
+        text-align: center;
+        padding-top: 450px;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 0.5em;
+    }
+    a {
+        display: block;
+        width: 200px;
+        margin: 50px auto;
+        padding: 10px 5px;
+        border: black solid 1px;
+        text-align: center;
+        background-color: #E02B20;
+
+    }
+    background: url("../images/background-header.jpg") no-repeat center center fixed; 
+    height: 900px;
+    background-size: cover;
+}
+
+#menu {}
+
+#about {}
+
+footer {}
