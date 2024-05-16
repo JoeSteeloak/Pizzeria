@@ -15,7 +15,7 @@ function displayMenu(data) {
     data.forEach(e => {
         menuEl.innerHTML += 
         `<div class="menuItem">
-        <h3 class="foodname">${e.foodname}</h3>
+        <h4 class="foodname">${e.foodname}</h4>
         <p class="ingredients">${e.ingredients}</p>
         <p class="price">${e.price} kr</p> 
         </div>`
