@@ -1,4 +1,3 @@
-
 body {
     width: 100vw;
     overflow-x: hidden; //ta bort sidescroll
@@ -14,11 +13,15 @@ header {
     nav {
         width: 100vw;
         max-width: 1800px;
-        img{
+
+        img {
             position: fixed;
             top: 10px;
             left: 50px;
             width: 220px;
+        }
+        img:hover {
+            transform: scale(1.1);
         }
     }
 
@@ -118,9 +121,10 @@ h2 {
 
     .menuItem {
         padding: 50px;
-
         width: 200px;
-
+    }
+    .menuItem:hover {
+        transform: scale(1.5);
     }
 }
 
@@ -188,14 +192,17 @@ footer {
         text-transform: uppercase;
         letter-spacing: 0.05em;
     }
+
     i:hover {
         cursor: pointer;
         color: #5cb83a;
     }
+
     #openingHours {
         margin-left: 10px;
         line-height: 1.5em;
     }
+
     #adress {
         line-height: 1.5em;
     }
@@ -205,4 +212,10 @@ footer {
     width: 600px;
     max-width: 100%;
     margin: 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+    #logo {
+        display: none;
+    }
 }
