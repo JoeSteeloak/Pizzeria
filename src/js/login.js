@@ -46,6 +46,7 @@ async function loginUser(username, password) {
         localStorage.setItem('token', data.response.token); //spara JWT token
         localStorage.setItem('username', user.username);
         success.innerHTML = `${data.response.message}`;
+        error.innerHTML = "";
         setTimeout(logInRedirect, 1000)
         function logInRedirect() { window.location.href = 'admin.html' };  //skicka en till sidan bara tillåten för inloggade
     }

@@ -1,3 +1,37 @@
 .hidden {
     display: none;
 }
+
+h1 {
+    text-align: center;
+}
+
+div {
+    padding: 20px;
+    text-align: center;
+}
+
+form {
+    border: black 1px solid;
+    padding: 10px;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    input {
+        margin-bottom: 15px;
+    }
+    legend {
+        font-size: 1.2em;
+    }
+}
+
+footer {
+    text-align: center;
+}
+
+footer input {
+    text-align: center;
+    width: 100px;
+    margin: 15px;
+}
+

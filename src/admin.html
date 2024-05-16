@@ -15,26 +15,26 @@
         <h1>Admin</h1>
     </header>
     <main>
-        
+        <div>
         <label for="options">Välj ett alternativ:</label>
         <select name="options" id="options">
             <option value="create">Skapa ny</option>
         </select>
+    </div>
 
-        </select>
         <!-- Form for adding new food -->
         <form action="" id="registerForm" >
             <legend>Registrera ny mat på menyn:</legend>
             <!-- foodname -->
             <label for="foodname">Namn på maten:</label>
-            <input type="text" name="foodname" id="foodname" placeholder="Ex. Margharita" maxlength="255" minlength="4">
+            <input type="text" name="foodname" id="foodname" placeholder="Ex. Margharita" maxlength="255" minlength="4"><br>
             <!-- price -->
             <label for="price">Pris:</label>
-            <input type="number" name="price" id="price" placeholder="100" maxlength="255" minlength="4">
+            <input type="number" name="price" id="price" placeholder="100" maxlength="255" minlength="4"><br>
             <!-- ingredients -->
             <label for="ingredients">Ingredienser:</label>
-            <input type="text" name="ingredients" id="ingredients" placeholder="Tomat, Ost..." maxlength="255"
-                minlength="4">
+            <input type="text" name="ingredients" id="ingredients" placeholder="Tomat, Ost..." maxlength="255"br
+                minlength="4" size="50"><br>
             <!-- registreraknapp -->
             <input type="button" id="registerBtn" class="button" value="SPARA">
             <!-- avbrytknapp -->
@@ -46,14 +46,14 @@
             <legend>uppdatera eller ta bort mat på menyn:</legend>
             <!-- foodname -->
             <label for="updatedFoodname">Namn på maten:</label>
-            <input type="text" name="updatedFoodname" id="updatedFoodname" maxlength="255" minlength="4">
+            <input type="text" name="updatedFoodname" id="updatedFoodname" maxlength="255" minlength="4"><br>
             <!-- price -->
             <label for="updatedPrice">Pris:</label>
-            <input type="number" name="updatedPrice" id="updatedPrice" maxlength="255" minlength="4">
+            <input type="number" name="updatedPrice" id="updatedPrice" maxlength="255" minlength="4"><br>
             <!-- ingredients -->
             <label for="updatedIngredients">Ingredienser:</label>
             <input type="text" name="updatedIngredients" id="updatedIngredients" maxlength="255"
-                minlength="4">
+                minlength="4" size="50"><br>
             <!-- registreraknapp -->
             <input type="button" id="updateBtn" class="button" value="UPPDATERA">
             <!-- avbrytknapp -->
@@ -62,7 +62,7 @@
         </form>
     </main>
 
-    <footer><input type="button" id="logoutbtn" class="button" value="LOGOUT"></footer>
+    <footer><input type="button" id="logoutbtn" class="button" value="LOGGA UT"></footer>
 </body>
 
 </html>
