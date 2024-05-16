@@ -1,3 +1,4 @@
+
 body {
     width: 100vw;
     overflow-x: hidden; //ta bort sidescroll
@@ -93,24 +94,27 @@ h2 {
 }
 
 #menu {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
     .foodname {
         text-transform: uppercase;
         letter-spacing: 0.1em;
     }
+
     .ingredients {
         color: #888888;
     }
+
     .price {
         color: #5cb83a;
         font-weight: 700;
     }
+
     .menuItem {
         padding: 50px;
 
         width: 200px;
-        
+
     }
 }
 
@@ -119,6 +123,8 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 #about {
@@ -126,31 +132,64 @@ h2 {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    img{
+
+    img {
         width: 500px;
         max-width: 90%;
         padding: 25px;
     }
-    p{
+
+    p {
         max-width: 500px;
         width: 80%;
-        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         letter-spacing: 0.05em;
         line-height: 1.5em;
         padding: 25px;
         color: #888;
     }
+
     .extra {
         color: #E02B20;
         text-transform: uppercase;
         font-weight: 700;
     }
-    
+
 }
 
 footer {
     background-color: #efece4;
-    p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #3e3e3e;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    p {
         margin-bottom: 0;
+    }
+
+    display: flex;
+
+    div {
+        flex-grow: 1;
+        padding: 10px;
+    }
+
+    h4 {
+        color: #E02B20;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+    }
+    i:hover {
+        cursor: pointer;
+        color: #5cb83a;
+    }
+    #openingHours {
+        margin-left: 10px;
+        line-height: 1.5em;
+    }
+    #adress {
+        line-height: 1.5em;
     }
 }
