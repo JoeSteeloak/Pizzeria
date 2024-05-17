@@ -21,3 +21,19 @@ function displayMenu(data) {
         </div>`
     });
 }
+
+//visa och dölj bokningsfönstret
+
+const bookingBtnEl = document.getElementById("booking-btn");
+const bookingFormDivEl = document.getElementById("bookingFormDiv");
+const closeBtnEl = document.getElementById("closeBtn");
+
+bookingBtnEl.addEventListener('click', () => {
+    bookingFormDivEl.classList.toggle("show");
+    bookingBtnEl.classList.toggle("active");
+})
+
+closeBtnEl.addEventListener('click', () => {
+    bookingFormDivEl.classList.toggle("show")
+    bookingBtnEl.classList.toggle("active");
+})
