@@ -35,6 +35,7 @@
         <h2 id="menuTitle">Pizzameny</h2>
         <div id="menu" class="flex-container">
         </div>
+        <!-- Pizzerians histora -->
         <h2 id="aboutTitle">Vår historia</h2>
         <div id="about">
             <div><img src="./images/hot-pizza.jpg" alt=""></div>
@@ -52,6 +53,7 @@
                 </p>
             </div>
         </div>
+        <!-- google map för att hitta till pizzerian -->
         <h2 id="aboutLocation">Hitta hit</h2>
         <div id="map">
             <iframe
@@ -59,6 +61,7 @@
                 width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
+        <!-- Formulär för att skicka meddelanden till pizzerian -->
         <h2 id="contactFormLocation">Skicka ett meddelande</h2>
         <div id="contactForm">
             <form id="form" class="topBefore">
@@ -72,6 +75,21 @@
         </div>
         <!-- bokningsformulär - pop-up -->
         <p id="booking-btn">BOKA BORD</p>
+        <div id="bookingFormDiv" class="hidden">
+            <form id="bookingForm" action="">
+                <legend>Boka bord</legend>
+                <label for="booking-name">Namn:</label><br>
+                <input type="text" id="booking-name" name="booking-name"><br>
+                <label for="booking-phone">Telefon:</label><br>
+                <input type="tel" id="booking-phone" name="booking-phone"><br>
+                <label for="booking-amount">Antal gäster:</label><br>
+                <input type="number" id="booking-amount" name="booking-amount"><br>
+                <label for="booking-date">Tid:</label><br>
+                <input type="datetime-local" id="booking-date" name="booking-date"><br>
+                <input type="button" id="bookBtn" value="BOKA">
+            </form>
+            <i class="fa-solid fa-x" id="closeBtn"></i>
+        </div>
     </main>
     <footer>
         <div id="openingHours">
