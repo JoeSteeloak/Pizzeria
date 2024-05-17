@@ -46,7 +46,7 @@
 }
 
 .active {
-    background-color: #5cb83a  !important;
+    background-color: #5cb83a !important;
 }
 
 input {
@@ -78,6 +78,10 @@ input:hover {
     color: #000;
 }
 
+input:valid {
+    background: #FFF;
+}
+
 legend {
     font-weight: 700;
     text-transform: uppercase;
@@ -104,6 +108,7 @@ label {
 
 #bookBtn {
     width: 502px;
+    background: #FFF;
 
     padding: 0;
     margin: -5px 0px 0px 0px;
@@ -124,4 +129,29 @@ label {
 #bookBtn:hover {
     color: #FFF;
     background-color: #5cb83a;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+    #bookingFormDiv {
+        padding: 20px;
+        width: 320px;
+        max-width: 100%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    input {
+        max-width: 100%;
+        width: 300px;
+    }
+
+    #bookBtn {
+        width: 100%;
+    }
+
+    .hidden {
+        display: none;
+    }
 }

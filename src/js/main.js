@@ -30,10 +30,12 @@ const closeBtnEl = document.getElementById("closeBtn");
 
 bookingBtnEl.addEventListener('click', () => {
     bookingFormDivEl.classList.toggle("show");
+    bookingFormDivEl.classList.toggle("hidden");
     bookingBtnEl.classList.toggle("active");
 })
 
 closeBtnEl.addEventListener('click', () => {
-    bookingFormDivEl.classList.toggle("show")
+    bookingFormDivEl.classList.toggle("show");
+    bookingFormDivEl.classList.toggle("hidden");
     bookingBtnEl.classList.toggle("active");
 })

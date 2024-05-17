@@ -75,17 +75,17 @@
         </div>
         <!-- bokningsformulär - pop-up -->
         <p id="booking-btn">BOKA BORD</p>
-        <div id="bookingFormDiv" class="slidingDiv">
+        <div id="bookingFormDiv" class="slidingDiv hidden">
             <form id="bookingForm" action="">
                 <legend>Boka bord</legend>
                 <label for="booking-name">Namn:</label><br>
-                <input type="text" id="booking-name" name="booking-name"><br>
+                <input type="text" id="booking-name" name="booking-name" required><br>
                 <label for="booking-phone">Telefon:</label><br>
-                <input type="tel" id="booking-phone" name="booking-phone"><br>
+                <input type="tel" id="booking-phone" name="booking-phone" required><br>
                 <label for="booking-amount">Antal gäster:</label><br>
-                <input type="number" id="booking-amount" name="booking-amount"><br>
+                <input type="number" id="booking-amount" name="booking-amount" required><br>
                 <label for="booking-date">Tid:</label><br>
-                <input type="datetime-local" id="booking-date" name="booking-date"><br>
+                <input type="datetime-local" id="booking-date" name="booking-date" required><br>
                 <input type="button" id="bookBtn" value="BOKA">
             </form>
             <i class="fa-solid fa-x" id="closeBtn"></i>
