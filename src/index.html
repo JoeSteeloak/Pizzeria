@@ -7,6 +7,8 @@
     <title>Pizzeria Formaggio</title>
     <link rel="stylesheet" href="./css/styles.scss">
     <link rel="stylesheet" href="./css/normalize.scss">
+    <link rel="stylesheet" href="./css/form.scss">
+    <link rel="stylesheet" href="./css/booking.scss">
     <script type="module" src="./js/main.js"></script>
     <script src="https://kit.fontawesome.com/49496d55e2.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
@@ -52,7 +54,24 @@
         </div>
         <h2 id="aboutLocation">Hitta hit</h2>
         <div id="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2254.679783535239!2d12.994633077881586!3d55.590181973024634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTXCsDM1JzI0LjciTiAxMsKwNTknNTAuMCJF!5e0!3m2!1ssv!2sse!4v1715859717903!5m2!1ssv!2sse" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2254.679783535239!2d12.994633077881586!3d55.590181973024634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTXCsDM1JzI0LjciTiAxMsKwNTknNTAuMCJF!5e0!3m2!1ssv!2sse!4v1715859717903!5m2!1ssv!2sse"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <h2 id="contactFormLocation">Skicka ett meddelande</h2>
+        <div id="contactForm">
+            <form id="form" class="topBefore">
+
+                <input id="name" type="text" placeholder="NAMN">
+                <input id="email" type="text" placeholder="E-MAIL">
+                <textarea id="message" type="text" placeholder="MEDDELANDE"></textarea>
+                <input id="submit" type="submit" value="SKICKA!">
+
+            </form>
+        </div>
+        <!-- bokningsformulär - pop-up -->
+        <p id="booking-btn">BOKA BORD</p>
     </main>
     <footer>
         <div id="openingHours">
