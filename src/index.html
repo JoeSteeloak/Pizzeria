@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/booking.scss">
     <script type="module" src="./js/main.js"></script>
     <script type="module" src="./js/booking.js"></script>
+    <script type="module" src="./js/contact.js"></script>
     <script src="https://kit.fontawesome.com/49496d55e2.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
 </head>
@@ -70,14 +71,14 @@
                 <input id="name" type="text" placeholder="NAMN">
                 <input id="email" type="text" placeholder="E-MAIL">
                 <textarea id="message" type="text" placeholder="MEDDELANDE"></textarea>
-                <input id="submit" type="submit" value="SKICKA!">
-
+                <input id="submit" type="button" value="SKICKA!">
+            
             </form>
         </div>
         <!-- bokningsformulär - pop-up -->
         <p id="booking-btn">BOKA BORD</p>
         <div id="bookingFormDiv" class="slidingDiv hidden">
-            <form id="bookingForm" action="">
+            <form id="bookingForm">
                 <legend>Boka bord</legend>
                 <label for="booking-name">Namn:</label><br>
                 <input type="text" id="booking-name" name="booking-name" required><br>
