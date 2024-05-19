@@ -1,6 +1,6 @@
 // logga in
 
-let url = "http://127.0.0.1:3000/api/login" //URL till mitt API
+let url = "https://pizzaapi-kzs1.onrender.com/api/login" //URL till mitt API
 
 /* funktion för att läsa in datan i formuläret */
 const loginBtnEl = document.getElementById("loginBtn");

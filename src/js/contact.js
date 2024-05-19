@@ -1,4 +1,4 @@
-const url = "http://127.0.0.1:3000/message" //URL till mitt API
+const url = "https://pizzaapi-kzs1.onrender.com/message" //URL till mitt API
 const contactFormEl = document.getElementById('contactForm');
 
 /* funktion för att läsa in datan i formuläret */

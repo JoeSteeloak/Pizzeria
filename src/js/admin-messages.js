@@ -8,7 +8,7 @@ function logout() {
 }
 
 
-const url = "http://127.0.0.1:3000/message" //URL till mitt API
+const url = "https://pizzaapi-kzs1.onrender.com/message" //URL till mitt API
 
 /* Hämta bokningarna */
 window.onload = init;

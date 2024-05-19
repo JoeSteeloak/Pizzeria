@@ -8,7 +8,7 @@ function logout() {
 }
 
 
-const url = "http://127.0.0.1:3000/menu" //URL till mitt API
+const url = "https://pizzaapi-kzs1.onrender.com/menu" //URL till mitt API
 const registerFormEl = document.getElementById('registerForm');
 const updateFormEl = document.getElementById('updateForm');
 

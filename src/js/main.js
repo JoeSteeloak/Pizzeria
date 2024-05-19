@@ -1,7 +1,7 @@
 /* Hämta ner menyn */
 window.onload = init;
 async function init() {
-    const url = "http://127.0.0.1:3000/menu";
+    const url = "https://pizzaapi-kzs1.onrender.com/menu";
 
     const response = await fetch(url + "/getmenu");
     const data = await response.json();
