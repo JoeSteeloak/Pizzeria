@@ -1,9 +1,16 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 .hidden {
     display: none;
 }
 
 h1 {
     text-align: center;
+}
+
+h4 {
+    margin-top: 0;
 }
 
 div {
@@ -40,9 +47,11 @@ footer input {
 
 .messageItem,
 .bookingItem {
-    border: 1px black solid;
     width: 250px;
     margin: 10px auto;
+    background-color: white;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    border: none;
 }
 
 nav {
@@ -60,4 +69,14 @@ nav {
         text-decoration: none;
         padding: 10px;
     }
+}
+
+body {
+    background-color: #efece4;
+}
+
+#registerForm {
+    background-color: white;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    border: none;
 }
