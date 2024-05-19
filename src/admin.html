@@ -15,32 +15,35 @@
 <body>
     <header>
         <h1>Admin - Meny</h1>
-        <ul>
-            <li><a href="admin.html">Redigera Meny</a></li>
-            <li><a href="admin-bookings.html">Bokningar</a></li>
-            <li><a href="admin-messages.html">Gästmeddelanden</a></li>
-        </ul>
+        <nav>
+            <ul>
+                <li><a href="admin.html">Redigera Meny</a></li>
+                <li><a href="admin-bookings.html">Bokningar</a></li>
+                <li><a href="admin-messages.html">Gästmeddelanden</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <div>
-        <label for="options">Välj ett alternativ:</label>
-        <select name="options" id="options">
-            <option value="create">Skapa ny</option>
-        </select>
-    </div>
+            <label for="options">Välj ett alternativ:</label>
+            <select name="options" id="options">
+                <option value="create">Skapa ny</option>
+            </select>
+        </div>
 
         <!-- Form for adding new food -->
-        <form action="" id="registerForm" >
+        <form action="" id="registerForm">
             <legend>Registrera ny mat på menyn:</legend>
             <!-- foodname -->
             <label for="foodname">Namn på maten:</label><br>
-            <input type="text" name="foodname" id="foodname" placeholder="Ex. Margharita" maxlength="255" minlength="4"><br>
+            <input type="text" name="foodname" id="foodname" placeholder="Ex. Margharita" maxlength="255"
+                minlength="4"><br>
             <!-- price -->
             <label for="price">Pris:</label><br>
             <input type="number" name="price" id="price" placeholder="100" maxlength="255" minlength="4"><br>
             <!-- ingredients -->
             <label for="ingredients">Ingredienser:</label><br>
-            <input type="text" name="ingredients" id="ingredients" placeholder="Tomat, Ost..." maxlength="255"br
+            <input type="text" name="ingredients" id="ingredients" placeholder="Tomat, Ost..." maxlength="255" br
                 minlength="4" size="50"><br>
             <!-- registreraknapp -->
             <input type="button" id="registerBtn" class="button" value="SPARA">
@@ -59,8 +62,8 @@
             <input type="number" name="updatedPrice" id="updatedPrice" maxlength="255" minlength="4"><br>
             <!-- ingredients -->
             <label for="updatedIngredients">Ingredienser:</label><br>
-            <input type="text" name="updatedIngredients" id="updatedIngredients" maxlength="255"
-                minlength="4" size="50"><br>
+            <input type="text" name="updatedIngredients" id="updatedIngredients" maxlength="255" minlength="4"
+                size="50"><br>
             <!-- registreraknapp -->
             <input type="button" id="updateBtn" class="button" value="UPPDATERA">
             <!-- avbrytknapp -->

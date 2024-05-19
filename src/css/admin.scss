@@ -16,10 +16,11 @@ form {
     padding: 10px;
     max-width: 700px;
     margin: 0 auto;
-    
+
     input {
         margin-bottom: 15px;
     }
+
     legend {
         font-size: 1.2em;
         font-weight: 700;
@@ -37,4 +38,26 @@ footer input {
     margin: 15px;
 }
 
+.messageItem,
+.bookingItem {
+    border: 1px black solid;
+    width: 250px;
+    margin: 10px auto;
+}
 
+nav {
+    ul {
+        width: 500px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    li {
+        display: inline;
+    }
+
+    a {
+        text-decoration: none;
+        padding: 10px;
+    }
+}
