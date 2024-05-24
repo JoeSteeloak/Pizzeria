@@ -109,13 +109,15 @@ body {
     max-width: 250px;
 }
 
-#clearBtn {
+#clearBtn,
+#deleteBtn {
     background-color: #E02B20;
 }
 
 #logoutbtn:hover,
 .deleteBtn:hover,
-#clearBtn:hover {
+#clearBtn:hover,
+#deleteBtn:hover {
     background-color: #aa2b24db !important;
 }
 
