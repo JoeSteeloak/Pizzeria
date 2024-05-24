@@ -5,7 +5,6 @@ async function init() {
 
     const response = await fetch(url + "/getmenu");
     const data = await response.json();
-    console.log(data);
     displayMenu(data);
 };
 

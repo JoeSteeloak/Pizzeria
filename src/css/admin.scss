@@ -103,12 +103,19 @@ body {
     background: #43A047;
 }
 
-#logoutbtn {
+#logoutbtn,
+.deleteBtn {
     background-color: #E02B20 !important;
     max-width: 250px;
 }
 
-#logoutbtn:hover {
+#clearBtn {
+    background-color: #E02B20;
+}
+
+#logoutbtn:hover,
+.deleteBtn:hover,
+#clearBtn:hover {
     background-color: #aa2b24db !important;
 }
 

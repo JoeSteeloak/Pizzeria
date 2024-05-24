@@ -39,7 +39,7 @@ function displayMessages(data) {
         </div>`;
         const deleteMessageBtn = document.createElement("input");
         deleteMessageBtn.type = "button";
-        deleteMessageBtn.classList = "button";
+        deleteMessageBtn.classList = "deleteBtn button";
         deleteMessageBtn.value = "Radera meddelande";
         deleteMessageBtn.addEventListener('click', () => {
             deleteMessage(e._id);

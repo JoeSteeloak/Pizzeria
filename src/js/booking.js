@@ -39,6 +39,6 @@ async function createBooking(name, phonenumber, numberOfGuests, date) {
     } else {
         bookingStatus.innerHTML = `${data.message} <i class="fa-solid fa-check"></i>`;
         bookBtnEl.disabled = true;
-        bookBtnEl.classList.add("disabled");
+        bookBtnEl.classList.add("disabled");       
     }
 }

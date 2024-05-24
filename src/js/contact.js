@@ -34,8 +34,17 @@ async function createMessage(name, email, message) {
     if (data.error) {
         console.log(data.error);
     } else {
-        contactBtnEl.disabled = true;
+        let name = document.getElementById("name");
+        let email = document.getElementById("email");
+        let message = document.getElementById("message");
+        name.value = "";
+        email.value = "";
+        message.value = "";
         contactBtnEl.value = "Tack för meddelandet!";
+        setTimeout(() => {
+            contactBtnEl.value = "SKICKA!";
+        }, "3000")
+
     }
 }
 

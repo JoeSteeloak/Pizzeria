@@ -41,7 +41,7 @@ function displayBookings(data) {
         const deleteBookingBtn = document.createElement("input");
         deleteBookingBtn.type = "button";
         deleteBookingBtn.value = "Radera bokning";
-        deleteBookingBtn.classList = "button";
+        deleteBookingBtn.classList = "deleteBtn button";
         deleteBookingBtn.addEventListener('click', () => {
             deleteBooking(e._id);
         });
