@@ -1,5 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
 
-html { scroll-behavior: smooth; }
 body {
     width: 100vw;
     overflow-x: hidden; //ta bort sidescroll
@@ -14,7 +16,7 @@ header {
 
     nav {
         width: 100vw;
-        
+
 
         img {
             position: fixed;
@@ -22,6 +24,7 @@ header {
             left: 50px;
             width: 220px;
         }
+
         img:hover {
             transform: scale(1.1);
         }
@@ -126,6 +129,7 @@ h2 {
         padding: 50px;
         width: 200px;
     }
+
     .menuItem:hover {
         transform: scale(1.1);
     }
@@ -223,11 +227,19 @@ footer {
     #logo {
         display: none;
     }
+
     h2 {
-        font-size:2em;
+        font-size: 2em;
     }
+
     #contactFormLocation,
     #contactForm {
         display: none;
+    }
+
+    #menu {
+        .menuItem {
+            padding: 5px;
+        }
     }
 }
